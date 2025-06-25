@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\My Personal projects\Among Us\Emojis In the mogus chat\bin\Debug\net6.0\Emojis.deps.json
+C:\Users\User\Desktop\My Personal projects\Among Us\Emojis In the mogus chat\bin\Debug\net6.0\Emojis.dll
+C:\Users\User\Desktop\My Personal projects\Among Us\Emojis In the mogus chat\bin\Debug\net6.0\Emojis.pdb
+C:\Users\User\Desktop\My Personal projects\Among Us\Emojis In the mogus chat\obj\Debug\net6.0\Emojis.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\My Personal projects\Among Us\Emojis In the mogus chat\obj\Debug\net6.0\Emojis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\My Personal projects\Among Us\Emojis In the mogus chat\obj\Debug\net6.0\Emojis.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\My Personal projects\Among Us\Emojis In the mogus chat\obj\Debug\net6.0\Emojis.AssemblyInfo.cs
+C:\Users\User\Desktop\My Personal projects\Among Us\Emojis In the mogus chat\obj\Debug\net6.0\Emojis.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\My Personal projects\Among Us\Emojis In the mogus chat\obj\Debug\net6.0\Emojis.dll
+C:\Users\User\Desktop\My Personal projects\Among Us\Emojis In the mogus chat\obj\Debug\net6.0\refint\Emojis.dll
+C:\Users\User\Desktop\My Personal projects\Among Us\Emojis In the mogus chat\obj\Debug\net6.0\Emojis.pdb
+C:\Users\User\Desktop\My Personal projects\Among Us\Emojis In the mogus chat\obj\Debug\net6.0\ref\Emojis.dll
