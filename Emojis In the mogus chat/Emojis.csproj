@@ -15,7 +15,7 @@
 	<Import Project="AmongUs.props" />
 
   <ItemGroup>
-    <EmbeddedResource Include="emojibundle-win-x86.bundle" />
+    <EmbeddedResource Include="emojibundle-win.bundle" />
   </ItemGroup>
   
 </Project>

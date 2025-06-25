@@ -27,9 +27,11 @@ namespace Emojis
             
             if (final.Contains($":thinking:")) final = final.Replace($":thinking:", $"<sprite name=thinking>");
 
-            if (final.Contains($":blush:")) final = final.Replace($":hehsip:", $"<sprite name=blush>");
+            if (final.Contains($":blush:")) final = final.Replace($":blush:", $"<sprite name=blush>");
             
             if (final.Contains($":sus:")) final = final.Replace($":sus:", $"<sprite name=sus>");
+
+            if (final.Contains($":sob:")) final = final.Replace($":sob:", $"<sprite name=sob>");
             
             return final;
         }
