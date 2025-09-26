@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="emojibundle-win.bundle" />
+    <EmbeddedResource Include="emojibundle-android.bundle" />
   </ItemGroup>
   
 </Project>
