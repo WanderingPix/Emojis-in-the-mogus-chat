@@ -1,0 +1,16 @@
+{
+  "Name": "Emojis Mod",
+  "Description": "An Among Us Mod which adds emojis to the chat!",
+  "Tags": [
+    "client-side",
+    "silly"
+  ],
+  "Icon": "Emojis.icon.png",
+  "License": "GPLv3",
+  "Authors": [
+    "WanderingPixel"
+  ],
+  "Links": {
+    "Source": "https://github.com/wanderingpix/Emojis-in-the-mogus-chat"
+  }
+}
