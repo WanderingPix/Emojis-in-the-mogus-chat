@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Add Emojis to your in-game chat!")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+697ca0aa7c42b390371caf35c40494f2e0f1599e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d48a1eb736cd5490d39fbaaaeb32bac841d8451b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Emojis")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Emojis")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

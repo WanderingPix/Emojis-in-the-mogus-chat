@@ -16,8 +16,10 @@ public class EmojiSelectMenu(IntPtr ptr) : MonoBehaviour(ptr)
     public List<Button> emojiButtons = new();
     public Il2CppReferenceField<TMP_SpriteAsset> emojiAsset;
     public Il2CppReferenceField<TMP_InputField> searchBox;
+    public static EmojiSelectMenu Instance;
     public void Start()
     {
+        Instance = this;
         searchBox.Value.onValueChanged.AddListener((UnityAction<string>) new Action<string>(OnSearchBoxChanged));
         PopulateEmojis();
     }
@@ -59,7 +61,7 @@ public class EmojiSelectMenu(IntPtr ptr) : MonoBehaviour(ptr)
 
     public void Close()
     {
-        HudManager.Instance.Chat.chatScreen.transform.FindChild("closeBackground").gameObject.SetActive(true);
+        HudManager.Instance.Chat.chatScreen.transform.FindChild("CloseBackground").gameObject.SetActive(true);
         gameObject.Destroy();
     }
 }

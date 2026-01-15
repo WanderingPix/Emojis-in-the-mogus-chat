@@ -26,9 +26,10 @@ namespace Emojis
             button.OnClick = new();
             button.OnClick.AddListener((UnityAction) new Action((() =>
             {
+                if (EmojiSelectMenu.Instance) return;
                 emojiSelectMenu = Object.Instantiate(Assets.GetEmojiSelector(), chat.chatScreen.transform)
                     .GetComponent<EmojiSelectMenu>();
-                HudManager.Instance.Chat.chatScreen.transform.FindChild("closeBackground").gameObject.SetActive(false);
+                HudManager.Instance.Chat.chatScreen.transform.FindChild("CloseBackground").gameObject.SetActive(false);
             })));
         }
         [HarmonyPatch(typeof(ChatBubble), nameof(ChatBubble.SetText))]
