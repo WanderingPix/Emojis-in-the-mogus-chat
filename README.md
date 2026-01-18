@@ -1,7 +1,30 @@
-# An among us mod which adds emojis to chat!
+# Emojis Mod
 
-This mod is **CLIENT-SIDED** Meaning you can join people who don't have it! and they'll see chat as normal, while other users will see the emojis!
+A ***Client-Sided*** Among Us mod which adds **emojis** to the chat!
 
-Works with everything and anything, vanilla, town of us, stellar roles, the other roles, and maybe even a toaster!
+![Logo](Images/icon.png)
 
-Don't expect me to update this joke of a mod
+## Features
+
+- Android Support (Starlight) ⭐
+- Easy to use emoji selector.
+- Several emojis to choose from, with more being added over time.
+
+## Screenshots
+
+![Screenshot1](Images/screenshot1.png)
+![Screenshot2](Images/screenshot2.png)
+
+## Roadmap
+
+- Emoji Selector ✅
+- Gifs
+- Animated Emojis
+- Message Reactions
+
+## Copyright
+
+*This mod is not affiliated with Among Us or Innersloth LLC, and the content contained therein is not endorsed or
+otherwise sponsored by Innersloth LLC. Portions of the materials contained herein are property of Innersloth LLC.*
+
+*© Innersloth LLC.*
