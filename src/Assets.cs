@@ -7,7 +7,7 @@ using TMPro;
 using UnityEngine;
 
 namespace Emojis;
- 
+
 public static class Assets
 {
     public static AssetBundle Bundle;
@@ -15,17 +15,16 @@ public static class Assets
     private static GameObject EmojiSelector;
     private static Sprite EmojiButton;
     private static Sprite EmojiButtonHover;
+
     public static void Initialize()
     {
         Bundle = AssetBundleManager.Load("emojibundle").DontDestroy();
     }
-    
+
     public static TMP_SpriteAsset GetEmojiIndex()
     {
         if (EmojiIndex.IsNullOrDestroyed())
-        {
             EmojiIndex = Bundle.LoadAsset<TMP_SpriteAsset>("Index.asset").DontDestroy().DontUnload();
-        }
 
         if (EmojiIndex.IsNullOrDestroyed())
         {
@@ -35,13 +34,10 @@ public static class Assets
 
         return EmojiIndex;
     }
-    
+
     public static GameObject GetEmojiSelector()
     {
-        if (EmojiSelector.IsNullOrDestroyed())
-        {
-            EmojiSelector = Bundle.LoadAsset<GameObject>("EmojiSelector.prefab");
-        }
+        if (EmojiSelector.IsNullOrDestroyed()) EmojiSelector = Bundle.LoadAsset<GameObject>("EmojiSelector.prefab");
 
         if (EmojiSelector.IsNullOrDestroyed())
         {
@@ -51,13 +47,12 @@ public static class Assets
 
         return EmojiSelector;
     }
-    
+
     public static Sprite GetEmojiButton()
     {
         if (EmojiButton.IsNullOrDestroyed())
-        {
-            EmojiButton = SpriteTools.LoadSpriteFromPath("Emojis.Resources.EmojiButton.png", Assembly.GetCallingAssembly(), 128);
-        }
+            EmojiButton =
+                SpriteTools.LoadSpriteFromPath("Emojis.Resources.EmojiButton.png", Assembly.GetCallingAssembly(), 128);
 
         if (EmojiButton.IsNullOrDestroyed())
         {
@@ -67,13 +62,12 @@ public static class Assets
 
         return EmojiButton;
     }
-    
+
     public static Sprite GetEmojiButtonHover()
     {
         if (EmojiButtonHover.IsNullOrDestroyed())
-        {
-            EmojiButtonHover = SpriteTools.LoadSpriteFromPath("Emojis.Resources.EmojiButtonHover.png", Assembly.GetCallingAssembly(), 82);
-        }
+            EmojiButtonHover = SpriteTools.LoadSpriteFromPath("Emojis.Resources.EmojiButtonHover.png",
+                Assembly.GetCallingAssembly(), 82);
 
         if (EmojiButtonHover.IsNullOrDestroyed())
         {

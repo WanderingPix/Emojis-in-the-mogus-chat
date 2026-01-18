@@ -1,26 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <LangVersion>latest</LangVersion>
-    <Version>1.0.0</Version>
-    <Description>Add Emojis to your in-game chat!</Description>
-    <Authors>Pixel</Authors>
-  </PropertyGroup>
-  
-  <ItemGroup>
-    <EmbeddedResource Include="modinfo.json"/>
-    <EmbeddedResource Include="Resources\emojibundle-win.bundle" />
-    <EmbeddedResource Include="Resources\emojibundle-android.bundle" />
-    <EmbeddedResource Include="Resources\EmojiButton.png" />
-    <EmbeddedResource Include="Resources\EmojiButtonHover.png" />
-    <EmbeddedResource Include="Resources\icon.png" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <PackageReference Include="Reactor" Version="2.3.1" />
-    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.697" Private="false" ExcludeAssets="runtime;native" />
-  </ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Version>1.0.0</Version>
+        <Description>Add Emojis to your in-game chat!</Description>
+        <Authors>Pixel</Authors>
+    </PropertyGroup>
 
-	<Import Project="AmongUs.props" />
-  
+    <ItemGroup>
+        <EmbeddedResource Include="modinfo.json"/>
+        <EmbeddedResource Include="Resources\emojibundle-win.bundle"/>
+        <EmbeddedResource Include="Resources\emojibundle-android.bundle"/>
+        <EmbeddedResource Include="Resources\EmojiButton.png"/>
+        <EmbeddedResource Include="Resources\EmojiButtonHover.png"/>
+        <EmbeddedResource Include="Resources\icon.png"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Reactor" Version="2.3.1"/>
+        <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.697" Private="false" ExcludeAssets="runtime;native"/>
+    </ItemGroup>
+
+    <Import Project="AmongUs.props"/>
+
 </Project>

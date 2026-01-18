@@ -9,17 +9,17 @@ namespace Emojis.Utilities;
 public static class SpriteTools
 {
     /// <summary>
-    /// Loads and returns a texture from a resource path using the specified assembly.
+    ///     Loads and returns a texture from a resource path using the specified assembly.
     /// </summary>
     /// <param name="resourcePath">The path to the resource within the assembly.</param>
     /// <param name="assembly">The assembly from which to load the resource.</param>
-    /// <returns>A <see cref="Texture2D"/> object loaded from the specified resource path.</returns>
+    /// <returns>A <see cref="Texture2D" /> object loaded from the specified resource path.</returns>
     /// <exception cref="ArgumentException">Thrown when the resource cannot be found in the specified assembly.</exception>
     public static Texture2D LoadTextureFromResourcePath(string resourcePath, Assembly assembly)
     {
         var tex = new Texture2D(1, 1, TextureFormat.ARGB32, false)
         {
-            wrapMode = TextureWrapMode.Clamp,
+            wrapMode = TextureWrapMode.Clamp
         };
         var myStream = assembly.GetManifestResourceStream(resourcePath);
         if (myStream != null)
@@ -39,12 +39,12 @@ public static class SpriteTools
     }
 
     /// <summary>
-    /// Loads and returns a <see cref="Sprite"/> from a resource path using the specified assembly.
+    ///     Loads and returns a <see cref="Sprite" /> from a resource path using the specified assembly.
     /// </summary>
     /// <param name="resourcePath">The path to the resource within the assembly.</param>
     /// <param name="assembly">The assembly from which to load the resource.</param>
     /// <param name="pixelsPerUnit">The number of pixels per unit for the sprite.</param>
-    /// <returns>A <see cref="Sprite"/> object created from the texture loaded from the specified resource path.</returns>
+    /// <returns>A <see cref="Sprite" /> object created from the texture loaded from the specified resource path.</returns>
     public static Sprite LoadSpriteFromPath(string resourcePath, Assembly assembly, float pixelsPerUnit)
     {
         var tex = LoadTextureFromResourcePath(resourcePath, assembly);

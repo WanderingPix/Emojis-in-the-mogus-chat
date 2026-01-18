@@ -1,5 +1,4 @@
 using BepInEx;
-using BepInEx.Configuration;
 using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
 using Reactor;
@@ -16,7 +15,7 @@ namespace Emojis;
 public partial class EmojisPlugin : BasePlugin
 {
     public Harmony Harmony { get; } = new(Id);
-    public ConfigFile GetConfigFile() => Config;
+
     public override void Load()
     {
         Harmony.PatchAll();
