@@ -40,7 +40,7 @@ public class EmojiSelectMenu(IntPtr ptr) : MonoBehaviour(ptr)
             var button = Instantiate(emojiButtonPrefab.Value, emojisParent.Value);
             button.name = "EmojiButton_" + emoji.name;
             var b = button.GetComponent<Button>();
-            b.transform.GetChild(0).GetComponent<TMP_Text>().text = $"<sprite name=\"{emoji.name}\">";
+            b.transform.GetChild(1).GetComponent<TMP_Text>().text = $"<sprite name=\"{emoji.name}\">";
             b.onClick.AddListener(new Action(() =>
             {
                 Debug.Log("Selected Emoji: " + emoji.name);
