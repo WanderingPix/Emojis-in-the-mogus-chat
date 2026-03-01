@@ -45,6 +45,7 @@ public class EmojiSelectMenu(IntPtr ptr) : MonoBehaviour(ptr)
             {
                 Debug.Log("Selected Emoji: " + emoji.name);
                 var textBox = HudManager.Instance.Chat.freeChatField.textArea;
+                if (textBox.text = "") textBox.SetText("[Stickers]");
                 textBox.SetText(textBox.text + ":" + emoji.name + ": ");
             }));
             emojiButtons.Add(b);
