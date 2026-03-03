@@ -40,7 +40,13 @@ public class ChatPatches
     public static void SetTextPostfix(ChatBubble __instance, ref string chatText)
     {
         __instance.TextArea.m_spriteAsset = Assets.GetEmojiIndex();
-        __instance.TextArea.text = Utils.ReformatForEmojis(chatText);
+        __instance.TextArea.text = Utils.ReformatForEmojis(chatText, out bool isSticker);
+        if (isSticker)
+        {
+            __instance.TextArea.ForceMeshUpdate(true, true);
+            __instance.Background.size = new Vector2(5.52f, 0.2f + __instance.NameText.GetNotDumbRenderedHeight() + __instance.TextArea.GetNotDumbRenderedHeight());
+            __instance.MaskArea.size = __instance.Background.size - new Vector2(0f, 0.03f);
+        }
     }
 
     [HarmonyPatch(typeof(FreeChatInputField), nameof(FreeChatInputField.Awake))]
