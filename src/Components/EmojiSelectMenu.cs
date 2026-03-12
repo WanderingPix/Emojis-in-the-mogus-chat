@@ -82,7 +82,7 @@ public class EmojiSelectMenu(IntPtr ptr) : MonoBehaviour(ptr)
             }
             toggle.SetIsOnWithoutNotify(state);
         }
-        themeDropdown.Value.SetValueWithoutNotify((int)PluginSingleton<EmojisPlugin>.Instance.ChatTheme.Value);
+        themeDropdown.Value.SetValue((int)PluginSingleton<EmojisPlugin>.Instance.ChatTheme.Value, false);
         UpdateTheme();
     }
 
@@ -182,5 +182,6 @@ public class EmojiSelectMenu(IntPtr ptr) : MonoBehaviour(ptr)
     {
         PluginSingleton<EmojisPlugin>.Instance.ChatTheme.Value = (EmojisPlugin.ChatThemes) theme;
         PluginSingleton<EmojisPlugin>.Instance.Config.Save();
+        UpdateTheme();
     }
 }

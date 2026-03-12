@@ -3,6 +3,7 @@ using HarmonyLib;
 using Reactor.Utilities;
 using TMPro;
 using UnityEngine;
+using UnityEngine.ProBuilder;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
@@ -83,7 +84,7 @@ public static class ChatPatches
         //Chat Bubble Colors
         __instance.Background.color = Color.white;
         __instance.Background.material = new(Shader.Find("Sprites/Default"));
-        if (PluginSingleton<EmojisPlugin>.Instance.EnableColorfulBubbles.Value) __instance.Background.color = __instance.playerInfo.Color;
+        if (PluginSingleton<EmojisPlugin>.Instance.EnableColorfulBubbles.Value && !__instance.playerInfo.Color.ApproxC(Color.black, 0.1f)) __instance.Background.color = __instance.playerInfo.Color;
         
         //Timestamps
         var timestampObj = __instance.transform.FindChild("TimestampText");
@@ -91,11 +92,11 @@ public static class ChatPatches
         {
             timestampObj = Object.Instantiate(__instance.NameText, __instance.transform).transform;
             timestampObj.name = "TimestampText";
-            timestampObj.transform.localPosition = new(__instance.NameText.transform.localPosition.x * -1,  __instance.NameText.transform.localPosition.y, __instance.transform.localPosition.z);
         }
         var timestampTMP = timestampObj.GetComponent<TextMeshPro>();
         timestampTMP.text = DateTime.Now.ToString("hh:mm:ss tt");
-        timestampTMP.ForceMeshUpdate(false, true);
+        timestampObj.transform.localPosition = new(__instance.NameText.transform.localPosition.x * -1,
+            __instance.NameText.transform.localPosition.y, __instance.transform.localPosition.z);
     }
 
     [HarmonyPatch(typeof(FreeChatInputField), nameof(FreeChatInputField.Awake))]
@@ -118,6 +119,7 @@ public static class ChatPatches
             {
                 __instance.freeChatField.textArea.SetText("GG");
                 __instance.SendChat();
+                __instance.freeChatField.textArea.SetText("");
             })));
         }
         CreateButton();
@@ -128,6 +130,6 @@ public static class ChatPatches
     [HarmonyPostfix]
     public static void ChatNotification_SetUp_Postfix(ChatNotification __instance, ref PlayerControl sender)
     {
-        if (PluginSingleton<EmojisPlugin>.Instance.EnableColorfulBubbles.Value) __instance.background.color = sender.Data.Color;
+        if (PluginSingleton<EmojisPlugin>.Instance.EnableColorfulBubbles.Value && !sender.Data.Color.ApproxC(Color.black, 0.1f)) __instance.background.color = sender.Data.Color;
     }
 }
