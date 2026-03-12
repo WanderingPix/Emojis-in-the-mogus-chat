@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 2685228652
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: emojibundle
+      Dependencies: {}

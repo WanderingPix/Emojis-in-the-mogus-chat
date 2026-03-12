@@ -24,7 +24,7 @@ public static class Assets
     public static TMP_SpriteAsset GetEmojiIndex()
     {
         if (EmojiIndex.IsNullOrDestroyed())
-            EmojiIndex = Bundle.LoadAsset<TMP_SpriteAsset>("Index.asset").DontDestroy().DontUnload();
+            EmojiIndex = Bundle.LoadAsset<TMP_SpriteAsset>("Emojis.asset").DontDestroy().DontUnload();
 
         if (EmojiIndex.IsNullOrDestroyed())
         {

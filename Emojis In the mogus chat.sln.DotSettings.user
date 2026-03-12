@@ -1,0 +1,6 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:s="clr-namespace:System;assembly=mscorlib"
+                        xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\User\AppData\Roaming\.bepinex\game-libs\AmongUs.GameLibs.Steam\2025.9.9\interop\1.4.6-ci.426\UnityEngine.CoreModule.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

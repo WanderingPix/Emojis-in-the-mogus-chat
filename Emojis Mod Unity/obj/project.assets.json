@@ -1,0 +1,73 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.1": {},
+    ".NETFramework,Version=v4.7.1/win": {},
+    ".NETFramework,Version=v4.7.1/win-arm64": {},
+    ".NETFramework,Version=v4.7.1/win-x64": {},
+    ".NETFramework,Version=v4.7.1/win-x86": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.1": []
+  },
+  "packageFolders": {
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\User\\Emojis Assetbundle\\Assembly-CSharp.csproj",
+      "projectName": "Assembly-CSharp",
+      "projectPath": "C:\\Users\\User\\Emojis Assetbundle\\Assembly-CSharp.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Emojis Assetbundle\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "UsingMicrosoftNETSdk": false,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net471"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net471": {
+          "projectReferences": {}
+        }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net471": {}
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-arm64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
